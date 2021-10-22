@@ -5,8 +5,75 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Clothes Shop</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,400;0,700;0,900;1,300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
+    <header class="header center">
+        <div class="header__left">
+            <a href="#" class="logo">
+                <img class="logo__img" src="img/logo.png" alt="logo">
+                <p class="logo__p">Bran</p>
+                <p class="logo__d">D</p>
+            </a>
+            <form class="header__form" action="">
+                <button class="header__browse">Browse</button>
+                <input name="textfield" class="header__input" type="text" placeholder="Search for Item...">
+                <button class="header__button"><img src="img/search.png" alt="search"></button>
+            </form>
+        </div>
+        <div class="header__right">
+            <img class="header__cart" src="img/cart.png" alt="cart">
+            <button href="#" class="button">My account</button>
+        </div>
+    </header>
+    <nav class="nav center">
+        <ul class="menu">
+            <li class="menu__list"><a href="#" class="menu__link">Home</a></li>
+            <li class="menu__list"><a href="#" class="menu__link">Man</a></li>
+            <li class="menu__list"><a href="#" class="menu__link">Women</a></li>
+            <li class="menu__list"><a href="#" class="menu__link">Kids</a></li>
+            <li class="menu__list"><a href="#" class="menu__link">Accoseriese</a></li>
+            <li class="menu__list"><a href="#" class="menu__link">Featured</a></li>
+            <li class="menu__list"><a href="#" class="menu__link">Hot</a></li>
+            <li class="menu__list"><a href="#" class="menu__link">Deals</a></li>
+        </ul>
+    </nav>
+    <div class="promo center">
+        <div class="promo__content">
+            <h1 class="promo__content_h1">The Brand</h1>
+            <span class="promo__content_h2">OF LUXERIOUS</span>
+            <span class="promo__content_h2_red">FASHION</span>
+        </div>
+    </div>
+    <main class="categories center">
+        <div class="categories__category categoty__man">
+            <div class="category__description">
+                <p class="category__description_black"></p>
+                <p class="category__description_red"></p>
+            </div>
+        </div>
+        <div class="categories__category categoty__woman">
+            <div class="category__description">
+                <p class="category__description_black"></p>
+                <p class="category__description_red"></p>
+            </div>
+        </div>
+        <div class="categories__category categoty__kid">
+            <div class="category__description">
+                <p class="category__description_black"></p>
+                <p class="category__description_red"></p>
+            </div>
+        </div>
+        <div class="categories__category categoty__accessories">
+            <div class="category__description">
+                <p class="category__description_black"></p>
+                <p class="category__description_red"></p>
+            </div>
+        </div>
+        
+    </main>
 </body>
 </html>
