@@ -282,10 +282,60 @@ a {
     /* line-height: 54px; */
 }
 .gallery__items {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(4, 261px);
+    grid-template-rows: repeat(2, 345px);
+    gap: 30px 30px;
 
 }
 .item {
-    flex-wrap: wrap;
-    flex-grow: 1;
+    transition: all .2s ease-in;
 }
+
+.item:hover {
+    background-color: rgba(255, 255, 255, 1);
+    box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.16);
+}
+.item__img {
+    transition: all .3s ease-in-out;
+}
+.item__img:hover {
+    filter: brightness(50%);
+}
+.item__description {
+    height: 62px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-around;
+    padding-left: 14px;
+}
+
+.item__description__name {
+    font-size: 13px;
+    font-weight: 400;
+    color: rgba(34, 34, 34, 1);
+    text-align: center;
+    text-transform: uppercase;
+    justify-content: flex-start;
+}
+.item__description__own {
+    width: 261px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 24px; /*поправить костыль с позицианированием */
+}
+.item__description__own_price {
+    font-size: 16px;
+    font-weight: bold;
+    color: rgba(241, 109, 127, 1);
+    text-align: center;
+    text-transform: uppercase;
+}
+.item__description__own_star {   /* в js скрипте поменять название star на starS, добавить стиль .hide */
+    display: block; /* заглушка, убрать при следующем редактировании */
+}
+/* .item__description__own_star:hover { // сделать скрытие звёзд, возможно убрать div и оставить только img
+    display: block;
+} */
