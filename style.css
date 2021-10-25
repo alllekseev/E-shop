@@ -255,7 +255,6 @@ a {
 .gallery {
     display: flex;
     flex-direction: column;
-    /* justify-content: center; */
     align-items: center;
 }
 .gallery__title {
@@ -271,7 +270,6 @@ a {
     color: rgba(34, 34, 34, 1);
     text-align: center;
     letter-spacing: 0px;
-    /* line-height: 54px; */
 }
 .gallery__title_p {
     font-size: 14px;
@@ -372,10 +370,32 @@ a {
     text-align: center;
     text-transform: uppercase;
 }
-.item__description__own_star {   /* в js скрипте поменять название star на starS, добавить стиль .hide */
-    display: block; /* заглушка, убрать при следующем редактировании */
-}
-/* .item__description__own_star:hover { // сделать скрытие звёзд, возможно убрать div и оставить только img
+/* TODO в js скрипте поменять название star на starS, добавить стиль .hide */
+/* TODO .item__description__own_star:hover { // сделать скрытие звёзд, возможно убрать div и оставить только img
     display: block;
 } */
+.gallery__button {
+    margin-top: 79px;
+    margin-bottom: 113px;
+    height: 48px;
+    width: 212px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgba(241, 109, 127, 1);
+    border: none;
+    transition: all .2s;
+    font-size: 16px;
+    font-weight: bold;
+    color: rgba(255, 255, 255, 1);
+    text-align: center;
+    letter-spacing: 0px;
+    line-height: 54px;
 
+}
+.gallery__button:hover {
+    background-color: rgb(231, 79, 99);
+}
+.gallery__button:active {
+    filter: brightness(80%);
+}
