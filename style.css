@@ -399,3 +399,79 @@ a {
 .gallery__button:active {
     filter: brightness(80%);
 }
+
+.bunner {
+    height: 529px;
+    width: 100%;
+    display: flex;
+}
+.bunner__left-side {
+    height: 529px;
+    width: 767px;
+    background-image: url(https://raw.githubusercontent.com/alllekseev/static/master/imgE-shop/bunner_img.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    
+}
+.bunner__left-side__text {
+    padding-top: 146px;
+    padding-left: 40px;
+    height: 78px;
+}
+.bunner__left-side__text_h3 {
+    font-size: 54px;
+    font-weight: bold;
+    color: rgba(255, 255, 255, 1);
+    letter-spacing: 0px;
+}
+.bunner__left-side__text_span {
+    font-size: 54px;
+    font-weight: bold;
+    color: rgba(241, 109, 127, 1);
+    letter-spacing: 0px;
+    text-transform: uppercase;
+}
+.bunner__left-side__text_p {
+    font-size: 32px;
+    color: rgba(255, 255, 255, 1);
+    letter-spacing: 0px;
+    text-transform: uppercase;
+}
+.bunner__right-side {
+    width: 373px;
+    background-color: #1c1c1f;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+.bunner__right-side__feature-box {
+    position: relative;
+    height: 103px;
+    width: 294px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+
+}
+.bunner__right-side__feature-box_icon {
+    font-size: 32px;
+    color:rgb(231, 79, 99)
+}
+.bunner__right-side__feature-box__text {
+    padding-left: 33px;
+}
+.bunner__right-side__feature-box__text_h3 {
+    font-size: 20px;
+    font-weight: bold;
+    color: rgba(251, 251, 251, 1);
+    letter-spacing: 0px;
+    padding-bottom: 17px;
+}
+.bunner__right-side__feature-box__text_p {
+    font-size: 14px;
+    font-weight: 300;
+    color: rgba(251, 251, 251, 1);
+    letter-spacing: 0px;
+    line-height: 24px;
+}
